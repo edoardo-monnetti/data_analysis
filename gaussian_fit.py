@@ -24,7 +24,7 @@ n = len(x)
 mean = sum(x*y)/n
 sigma = sum(y*(x-mean)**2)/n
 
-par_opt, cov_opt = curve_fit(gauss, x, yn, p0=[0, 1, mean, sigma])
+par_opt, cov_opt = curve_fit(gauss, x, yn, p0=[0, 1, 12, 1])
 
 print(par_opt)
 
